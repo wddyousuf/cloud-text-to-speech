@@ -27,18 +27,18 @@
             "type":"package",
             "package": {
                 "name": "google/gax",
-                "version":"dev-main",
+                "version":"dev-bug-fix",
                 "source": {
                     "url": "https://github.com/wddyousuf/gax-php.git",
                     "type": "git",
-                    "reference":"main"
+                    "reference":"bug-fix"
                 }
             }
         }
     ],
     "require": {
         "php": ">=7.4",
-        "google/gax": "dev-main"
+        "google/gax": "dev-bug-fix"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
