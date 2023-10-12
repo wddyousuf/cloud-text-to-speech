@@ -2,7 +2,7 @@
     "name": "google/cloud-text-to-speech",
     "description": "Cloud Text-to-Speech Client for PHP",
     "license": "Apache-2.0",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Google\\Cloud\\TextToSpeech\\": "src",
@@ -24,13 +24,21 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/wddyousuf/gax-php.git"
+            "type":"package",
+            "package": {
+                "name": "google/gax",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/wddyousuf/gax-php.git",
+                    "type": "git",
+                    "reference":"main"
+                }
+            }
         }
     ],
     "require": {
         "php": ">=7.4",
-        "google/gax": "^dev-bug-fix"
+        "google/gax": "dev-main"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
